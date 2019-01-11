@@ -1,0 +1,32 @@
+body {
+	background-color: #FFB41E;
+}
+
+h1, p, ul {
+	color: #7A0000;
+	font-family: "Gill Sans";
+	text-align: center;
+	list-style-type: none;
+}
+
+#header {
+	text-transform: uppercase;
+}
+
+#slogan {
+	font-style: italic;
+}
+
+.match_text {
+	font-size: large;
+	font-weight: bold;
+}
+
+.responsive_tiger {
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
