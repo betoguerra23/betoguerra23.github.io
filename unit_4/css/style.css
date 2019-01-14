@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Staatliches);
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+
+body {
+	background-color: #FFB41E;
+}
+
+h1, p, ul {
+	color: #7A0000;
+	font-family: 'Slabo 27px', serif;
+	text-align: center;
+	list-style-type: none;
+}
+
+.match_text {
+	font-size: large;
+	font-weight: bold;
+}
+
+.responsive_tiger {
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#header {
+	text-transform: uppercase;
+	font-family: 'Staatliches', cursive;
+}
+
+#slogan {
+	font-style: italic;
+}
