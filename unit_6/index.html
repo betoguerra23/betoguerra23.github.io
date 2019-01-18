@@ -1,80 +1,112 @@
 <!DOCTYPE html>
 <html>
-	
+
 	<head>
-		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="scripts/main.js"></script>
+		<title>yawns</title>
 	</head>
-	
-	<title>YAWNS</title>
 
 	<body>
-
 		<div class="wrapper">
 
-		<header>
+			<header>Berto's Yawns</header>
 
-			<section id="top" class="clearfix">
+			<div class="topnav" id="myTopnav">
+				<a href="#" class="active">Home</a>
+				<a href="#">Live video</a>
+				<a href="#">Voice</a>
+				<a href="#">Picture</a>
+				<a href="#">Contact</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
 
-				<div id="header">
-
-					<h1>Berto's Famous Yawns</h1>
-
-				</div>
-
-				<div id="button" class="dropdown">
-
-					<button class="dropbtn">Menu</button>
-
-				    <div class="dropdown_content">
-				    	<a href="#">Home</a>
-				    	<a href="#">About</a>	
-				      	<a href="#">Live Video Yawn</a>
-				      	<a href="#">Voice Message Yawn</a>
-				      	<a href="#">Picture Yawn</a>
-				      	<a href="#">Contact</a>
-				    </div>
-
-				</div>
-
-			</section>
-
-		</header>
-
-		<section id="two_column" class="clearfix">
-
-			<aside id="left">
-
-				<p class="match_text">Pure yawns, pure power</p><br>
-
-				<img src="images/tiger_yawning.jpg" alt="Tiger Yawning" title="Berto's Spirit Animal" class="responsive_tiger">
-
-			</aside>
-
-			<article id="right">
-
-				<p class="match_text">For a small fee you can hear and/or see me yawn</p><br>
-
-				<ul>
-					<li>Live Video Yawn</li><br>
-					<li>Voice Message Yawn</li><br>
-					<li>Picture Yawn</li><br>
-				</ul>
-
-				<p class="match_text">Your wish is my yawn!</p>
-
+			<article>
+				<p>Yawning is an involuntary reflex used to control the oxygen and carbon dioxide levels in our blood.  Stretching our lungs and lung tissue causes us to flex our muscles and joints, increase our heart rate, and feel more awake. Another health benefit of this involuntary response is the redistribution of a lubricating surfactant in the lung tissue that keeps our lungs from collapsing. Studies have shown that yawning is contagious!</p>
 			</article>
 
-		</section>
+			<section class="section_one" class="clearfix">
+				<div class="yawnoptions">
+					<p class="match_text">For a small fee you can hear and/or see me yawn</p>
+					<ul>
+						<div class="yawn_buttons">
+							<li><a href="#">Live Video Yawn</a></li>
+						</div>
+						<div class="yawn_buttons">
+							<li><a href="#">Voice Message Yawn</a></li>
+						</div>
+						<div class="yawn_buttons">
+							<li><a href="#">Picture Yawn</a></li>
+						</div>
+					</ul>
+					<p class="match_text">Your wish is my yawn!</p>
+				</div>
+				<div class="slogan_gif">
+					<img src="images/yawning.gif" alt="man yawning" title="yawn" class="responsive_yawn">
+				</div>
+			</section>
 
-		<footer>
+			<section class="section_videos" class="clearfix">
+				<h1>Check out some fellow yawners!</h1>
+				<div class="ytvideos" class="clearfix">
+					<div class="inside_ytvideos">
+						<h2>Dog Yawning 1</h2>
+						<p><a href="#">Link 1</a></p>
+					</div>
+				</div>
+				<div class="ytvideos" class="clearfix">
+					<div class="inside_ytvideos">
+						<h2>Dog Yawning 2</h2>
+						<p><a href="#">Link 2</a></p>
+					</div>
+				</div>
+				<div class="ytvideos" class="clearfix">
+					<div class="inside_ytvideos">
+						<h2>Dog Yawning 3</h2>
+						<p><a href="#">Link 3</a></p>
+					</div>
+				</div>
+				<div class="ytvideos" class="clearfix">
+					<div class="inside_ytvideos">
+						<h2>Dog Yawning 4</h2>
+						<p><a href="#">Link 4</a></p>
+					</div>
+				</div>
+			</section>
 
-			<p>Contact me: <a href="mailto:albergar@umich.edu">albergar@umich.edu</a></p>
+			<section class="section_contact">
+				<h3>Fill out this contact form to get in touch!</h3>
+				<div class="contact_form">
+					<form action="action_page.php">
 
-		</footer>
-		
+						<label for="fname">First Name</label>
+						<input type="text" id="fname" name="firstname" placeholder="your name..">
+
+						<label for="lname">Last Name</label>
+						<input type="text" id="lname" name="lastname" placeholder="your last name..">
+
+						<label for="email">Email</label>
+						<input type="text" id="email" name="email" placeholder="your email..">
+
+						<label for="subject">Subject</label>
+						<textarea id="subject" name="subject" placeholder="tell us why you like yawning.." style="height:200px"></textarea>
+
+						<input type="submit" value="submit">
+					</form>
+				</div>
+			</section>
+
+			<footer>
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-instagram"></a>
+				<a href="#" class="fa fa-snapchat"></a>
+			</footer>
+
 		</div>
-
 	</body>
-	
 </html>
