@@ -1,13 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather+Sans);
 
+* { margin: 0em, 
+    padding: 0em; 
+    box-sizing: border-box;
+  }
+
 body {
 	font-family: "Merriweather Sans", sans-serif;
-	text-transform: lowercase;
   font-size: 18px;
 }
 
-header {
+.logo {
 	font-size: 3em;
+  padding: 0em;
+  margin: 0em;
 }
 
 ul {
@@ -29,14 +35,14 @@ footer {
 }
 
 .fa {
-  padding: 20px;
-  font-size: 100px;
-  width: 30px;
+  width: 100px;
+  height: 100px;
   text-align: center;
   text-decoration: none;
   border-radius: 30%;
-  background: grey;
+  background-color: grey;
   color: white;
+  position: relative;
 }
 
 .section_one {
@@ -55,8 +61,6 @@ footer {
 	text-align: center;
 }
 
-/* i made this shitty way to vertically 
-align which is based on the height of the section */
 img {
   height: 15em;
   padding-top: 2.5em;
@@ -126,9 +130,9 @@ img {
   display: block;
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  padding: 1em 1em;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1em;
 }
 
 /* Change the color of links on hover */
