@@ -3,12 +3,11 @@
 body {
 	font-family: "Merriweather Sans", sans-serif;
 	text-transform: lowercase;
-	padding: 0em 4em;
+  font-size: 18px;
 }
 
 header {
 	font-size: 3em;
-	padding-bottom: 0.3em;
 }
 
 ul {
@@ -40,10 +39,6 @@ footer {
   color: white;
 }
 
-.wrapper {
-	border: 1px black solid;
-}
-
 .section_one {
 	background-color: #DBF5F3;
   border-radius: 8px;
@@ -55,9 +50,20 @@ footer {
 }
 
 .yawnoptions, .image_container {
-	float: left;
-	width: 50%;
+  float: left;
+  width: 50%;
 	text-align: center;
+}
+
+/* i made this shitty way to vertically 
+align which is based on the height of the section */
+img {
+  height: 15em;
+  padding-top: 2.5em;
+}
+
+.image_container {
+  line-height: 20em;
 }
 
 .yawn_buttons a {
@@ -82,10 +88,18 @@ footer {
 }
 
 .ytvideos {
-	float:left;
-	width: 40%;
-  margin: 1% 4% 1% 4%;
-  padding: 1% 0%;
+  float: left;
+  width: 50%;
+  margin:0 auto;
+  height:100vh;
+  text-align: center;
+  overflow: hidden;
+  max-width: 178vh;
+}
+
+.ytvideos iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .clearfix:after {
