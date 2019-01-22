@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather+Sans);
 
-* { margin: 0em, 
+* { margin: 0em; 
     padding: 0em; 
     box-sizing: border-box;
   }
@@ -8,12 +8,7 @@
 body {
 	font-family: "Merriweather Sans", sans-serif;
   font-size: 18px;
-}
-
-.logo {
-	font-size: 3em;
-  padding: 0em;
-  margin: 0em;
+  background-color: #FCFCFF;
 }
 
 ul {
@@ -21,50 +16,67 @@ ul {
 }
 
 article {
+  background-color: #DBF5F3;
 	text-align: center;
-	padding: 0.3em 3em;
+  letter-spacing: -0.03em;
+  padding: 1em 12.5%;
+  border-radius: 8px;
 }
 
 h2 {
 	font-size: smaller;
 }
 
-.match_text {
-	font-size: 1.2em;
+.logo {
+  font-size: 3em;
 }
 
-.section_one {
-  background-color: #DBF5F3;
+.booking_section {
+  background-color: #FCFCFF;
   border-radius: 8px;
-}
-
-.yawnoptions, .image_container {
-  float: left;
-  width: 50%;
-	text-align: center;
-}
-
-.image_container {
   position: relative;
 }
 
-.image_container:before {
+.book_slogan {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 0.25em 0em;
+}
+
+.image_container {
+  float: right;
+  width: 50%;
+}
+
+.yawnoptions {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  left: 25%;
+  transform: translate(-50%, -50%);
 }
 
 .yawn_buttons a {
-	background-color: white;
+  text-align: center;
+	background-color: #DBF5F3;
   display: block;
   text-decoration: none;
   color: black;
-	width: 30%;
 	border-radius: 8px;
 	border: 1px black solid;
 	padding: 1em;
 	margin: 0.5em auto;
+}
+
+.videos {
+  background-color: #DBF5F3;
+  border-radius: 8px;
+  padding-bottom: 1em;
+}
+
+.checkout {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 0.25em 0em;
 }
 
 .yawn_buttons a:hover {
@@ -72,25 +84,21 @@ h2 {
   color: black;
 }
 
-.videos {
-	text-align: center;
-}
-
 .ytvideos {
   float: left;
   width: 49%;
-  margin: 0% 0.5%;
+  margin: 0.5% 0.5%;
   height: 0;
-  padding-bottom: 28.5%;
+  padding-bottom: 27.5625%;
   position: relative;
   overflow: hidden;
+  border-radius: 8px;
 }
 
-.ytvideos:before {
+iframe {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
 }
 
 .clearfix:after {
@@ -106,7 +114,7 @@ h2 {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #DBF5F3;
+  background-color: #CEE2E8;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -202,16 +210,20 @@ input[type=submit]:hover {
 
 /* This is for the whole contact form section */
 .contact {
-  text-align: center;
-  background-color: #DBF5F3;
   border-radius: 8px;
   padding: 0.1em 0em 2em 0em;
+}
+
+.fillout {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 0.5em 0em 0.25em 0em;
 }
 
 /* CONTACT FORM END */
 
 footer {
-  margin: 2em 0em 0.5em 0em;
+  padding: 0em 0em 1em 0em;
   text-align: center;
 }
 
@@ -221,7 +233,7 @@ footer {
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-  background-color: grey;
+  background-color: #B0B0B0;
   color: white;
   position: relative;
 }
