@@ -31,16 +31,17 @@ h2 {
   font-size: 3em;
 }
 
+.match_text {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: normal;
+  padding: 0.25em 0em;
+}
+
 .booking_section {
   background-color: #FCFCFF;
   border-radius: 0.444em;
   position: relative;
-}
-
-.book_slogan {
-  text-align: center;
-  font-size: 1.5em;
-  padding: 0.25em 0em;
 }
 
 .image_container {
@@ -71,13 +72,6 @@ h2 {
   background-color: #DBF5F3;
   border-radius: 0.444em;
   padding-bottom: 1em;
-}
-
-.checkout {
-  text-align: center;
-  font-size: 1.5em;
-  font-weight: normal;
-  padding: 0.25em 0em;
 }
 
 .yawn_buttons a:hover {
@@ -216,8 +210,6 @@ input[type=submit]:hover {
 }
 
 .fillout {
-  text-align: center;
-  font-size: 1.5em;
   padding: 0.5em 0em 0.25em 0em;
 }
 
@@ -244,4 +236,53 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 14px;
+  }
+  .image_container {
+    float: none;
+    max-width: 100%;
+  }
+  .booking_section {
+    background-color: #FCFCFF;
+    border-radius: 0.444em;
+    position: relative;
+  }
+  .yawnoptions {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  .match_text {
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: normal;
+    padding: 0.25em 0em;
+  }
+  .ytvideos {
+    float: none;
+    width: 99%;
+    margin: 0.5% 0.5%;
+    height: 0;
+    padding-bottom: 55.6875%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.444em;
+  }
 }
