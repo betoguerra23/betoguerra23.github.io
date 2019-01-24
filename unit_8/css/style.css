@@ -248,9 +248,11 @@ footer {
   body {
     font-size: 14px;
   }
-  .image_container {
-    float: none;
-    max-width: 100%;
+  .match_text {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: normal;
+    padding: 0.5em 0em;
   }
   .booking_section {
     background-color: #FCFCFF;
@@ -263,6 +265,25 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  .image_container {
+    float: none;
+    max-width: 50%;
+  }
+  .yawn_buttons a {
+    text-align: center;
+    background-color: #DBF5F3;
+    display: inline;
+    text-decoration: none;
+    color: black;
+    border-radius: 0.444em;
+    border: 1px black solid;
+    padding: 1em;
+    margin: 0.5em auto;
+  }
+
+  .yawn_buttons li {
+    display: inline;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -273,7 +294,7 @@ footer {
     text-align: center;
     font-size: 1.25em;
     font-weight: normal;
-    padding: 0.25em 0em;
+    padding: 0.5em 0em;
   }
   .ytvideos {
     float: none;
