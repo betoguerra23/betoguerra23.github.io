@@ -15,27 +15,28 @@ ul {
   list-style-type: none;
 }
 
-article {
-  background-color: #DBF5F3;
-	text-align: center;
-  letter-spacing: -0.03em;
-  padding: 1em 12.5%;
+section {
+	text-align: left;
+  max-width: 38em;
   border-radius: 0.444em;
+  line-height: 1.5em;
+  margin: 0 auto;
+  padding: 2em 0;
 }
 
-h2 {
-	font-size: smaller;
+h1 {
+  padding-bottom: 0.5em;
 }
 
 .logo {
   font-size: 3em;
+  margin: 0.5em;
 }
 
 .match_text {
   text-align: center;
   font-size: 1.5em;
   font-weight: normal;
-  padding: 0.25em 0em;
 }
 
 .booking_section {
@@ -47,6 +48,10 @@ h2 {
 .image_container {
   float: right;
   width: 50%;
+}
+
+.book_yawn {
+  padding: 0.5em 0;
 }
 
 .yawnoptions {
@@ -68,15 +73,20 @@ h2 {
 	margin: 0.5em auto;
 }
 
-.videos {
-  background-color: #DBF5F3;
-  border-radius: 0.444em;
-  padding-bottom: 1em;
-}
-
 .yawn_buttons a:hover {
   background-color: #B4C9C8;
   color: black;
+}
+
+.videos {
+  background-color: #DBF5F3;
+  border-radius: 0.444em;
+  padding: 0 1em 2em 1em;
+  margin-top: 1em;
+}
+
+h2 {
+  padding: 1em 0 0.5em 0em;
 }
 
 .ytvideos {
@@ -109,7 +119,7 @@ iframe {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #CEE2E8;
+  background-color: #DBF5F3;
   border-radius: 0.444em;
   overflow: hidden;
 }
@@ -207,10 +217,11 @@ input[type=submit]:hover {
 .contact {
   border-radius: 0.444em;
   padding: 0.1em 0em 2em 0em;
+  margin-top: 1.5em;
 }
 
 .fillout {
-  padding: 0.5em 0em 0.25em 0em;
+  padding: 0.5em 0em 0.5em 0em;
 }
 
 /* CONTACT FORM END */
@@ -248,62 +259,56 @@ footer {
   body {
     font-size: 14px;
   }
-  .match_text {
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: normal;
-    padding: 0.5em 0em;
-  }
   .booking_section {
-    background-color: #FCFCFF;
-    border-radius: 0.444em;
-    position: relative;
-  }
-  .yawnoptions {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: initial;
+    text-align: center;
   }
   .image_container {
     float: none;
-    max-width: 50%;
+    width: 50%;
   }
-  .yawn_buttons a {
-    text-align: center;
-    background-color: #DBF5F3;
-    display: inline;
-    text-decoration: none;
-    color: black;
-    border-radius: 0.444em;
-    border: 1px black solid;
-    padding: 1em;
-    margin: 0.5em auto;
+  .yawnoptions {
+    position: initial;
+    transform: translate(0%, 0%);
+    margin: 2em 0em;
   }
-
-  .yawn_buttons li {
-    display: inline;
+  li {
+    display: inline-block;
+    margin: 0.5em;
+  }
+  .ytvideos {
+    width: 99%;
+    padding-bottom: 55.6875%;
   }
 }
 
-@media screen and (max-width: 600px) {
-  body {
-    font-size: 14px;
+@media screen and (max-width: 575px) {
+  section {
+    width: 85%;
+    margin: 0 auto;
   }
-  .match_text {
-    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .checkout, .fillout {
     font-size: 1.25em;
-    font-weight: normal;
-    padding: 0.5em 0em;
+    font-weight: bold;
   }
-  .ytvideos {
-    float: none;
-    width: 99%;
-    margin: 0.5% 0.5%;
-    height: 0;
-    padding-bottom: 55.6875%;
-    position: relative;
-    overflow: hidden;
-    border-radius: 0.444em;
+}
+
+@media screen and (max-width: 400px) {
+  .checkout, .fillout {
+    font-size: 1.12em;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .logo {
+    font-size: 2.5em;
+  }
+  .fillout {
+    font-size: 1.06em;
+    font-weight: bold;
   }
 }
